@@ -2,13 +2,17 @@
 <hr/>
   <div class="left">  
     &copy;{{ site.time | date:"%Y" }}.
-    Built with <a href="http://jekyllrb.com/">Jekyll</a> and
+    Built with <a href="http://jekyllrb.com/">Jekyll</a>. Theme based on 
     <a href="https://github.com/railsr/autm-rb">Autm-rb</a>
   </div>
 
   <div class="right">
-    {% unless site.twitter == "" %}
-      <a href="{{site.twitter}}"><i class="fa fa-twitter fa-lg" style="color:#49B1F7;"></i></a>
+    {% unless site.github == "" %}
+      <a href="{{site.github}}"><i class="fa fa-github fa-lg" style="color:#49B1F7;"></i></a>
+    </a> | 
+    {% endunless %}
+    {% unless site.linkedin == "" %}
+      <a href="{{site.linkedin}}"><i class="fa fa-linkedin fa-lg" style="color:#49B1F7;"></i></a>
     </a>
     {% endunless %}
   </div>

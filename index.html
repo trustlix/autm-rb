@@ -3,7 +3,15 @@ layout: welcome
 
 ---
 
- <div class="text-center">        
-  <img class="circular" src="https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/e15/11208586_1596699727213864_1958685864_n.jpg" >
-  <p>contact me <a href="mailto:user@example.com">user (at) example.com</a></p>
+<div class="text-center">
+  <img class="circular" src="https://www.gravatar.com/avatar/587a52158c8d964f7c9d6d800cbfa089?s=400" >
+  <h2> 
+    {% unless site.github == "" %}
+      <a href="{{site.github}}"><i class="fa fa-github fa-lg"></i></a> | 
+    {% endunless %}
+    {% unless site.linkedin == "" %}
+      <a href="{{site.linkedin}}"><i class="fa fa-linkedin fa-lg"></i></a>
+    {% endunless %}
+  </h2>
+  <p><a href="mailto:trustlix@gmail.com"><i class="fa fa-envelope-o fa-lg"></i> trustlix [at] gmail.com</a></p>
 </div>
